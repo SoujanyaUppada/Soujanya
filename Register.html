@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-image: url("img3.jpg");</style>
+<link rel="stylesheet" type="text/css" href="ponith.css"></link></head>
+
+  
+        <body>
+            <div class="page">
+            <div class="headerpart">
+                <li><img src="neel.jpg"width="40px" height="40px"></li>
+                
+            </div>
+             <div class="twopart">
+                <img src="IIT-Kharagpur.png"  width="1500px;" height="300px;">
+             </div>
+            <div class="thirdpart">
+                <center>
+                    <ul id="nav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a>
+                        <li><a href="#">FACULTY</a>
+                            <ul>
+                                <li><a href="#">LOGIN</a></li>
+                               
+                            </ul>
+                            </li>
+                            <li><a href="Login.html">STUDENT</a>
+                                <ul>
+                                    <li><a href="Login.html">LOGIN</a></li>
+                                    <li><a href="Register.html">REGISTER HERE</a></li>
+                                    <li><a href="#">BRANCH »</a>
+                                        <ul>
+                                            <li><a href="#">CSE</a>
+                                            <li><a href="#">MECH</a>
+                                            <li><a href="#">Civil</a>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li><a href="#">ACADEMICS</a></li>
+                            <li><a href="#">PLACEMENTS</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                    </ul>
+               </center>
+    
+                <script>
+                    function validate(){
+                        var fname=/^[a-z,A-Z][a-z,A-Z]*$/;
+                        var fname=document.getElementById("fname");
+                        var lname=/^[a-z,A-Z][a-z,A-Z]*$/;
+                        var lname=document.getElementById("lname");
+                        var password=document.getElementById("pass");
+                        var pn=document.getElementById("ph").value;
+                        var iph=/^[6-9]\d{9}$/
+                        var country=document.getElementById("country");
+                        if(fname.value.trim()=="" || password.value.trim()=="" || lname.value.trim()==""){
+                            alert("Please fill out the form");
+                            return false;
+                        }
+                        else if(fname.value.trim().length<3 || password.value.trim().length<6 ||lname.value.length<3){
+                            alert("Your name or password too short");
+                            return false;
+                        }
+                        else if(iph.test(pn)==false){
+                                alert("Please check your phone number");
+                                return false;
+                        }
+                        else{
+                            return true;
+                        }
+                    }
+                </script>
+                
+                
+            </div>
+        
+            
+        
+            <h4><small>Copyrights &copy; 2022 Website by Soujanya Uppada</small></h4>
+            </div>
+        
+    
+    </body>
+</html>
