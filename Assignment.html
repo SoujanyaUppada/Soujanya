@@ -1,0 +1,62 @@
+<html>
+    <head>
+       <title>F1H2O Event</title>
+       <link rel="stylesheet" type="text/css" href="Assign.css"> 
+    </head>
+    <body>
+       <div class="Main-body">
+           <center><h1 id="hed"><b id="hed1">F1H2O</b><i>RGUKT</i></h1></center>
+           
+           <div class="form-div" id="formdiv">
+              <form action="t.php" method="post" onsubmit="return mytest()">
+                  <table class="tab">
+                      <tr>
+                          <td>UserName:</td><td><input type="text" id="user" ></td><required>
+                      </tr>
+                      <tr>
+                          <td>Email:</td><td><input type="email"id="mail"></td>
+                      </tr>
+                      <tr>
+                          <td>MobileNumber:</td><td><input type="text" id="pn"></td>
+                      </tr>
+                      <tr>
+                          <td>Participents:</td><td><select id="psnt">
+                              <option value="none" selected disabled hidden>Select an Option</option>
+                              <option>INDIA</option>
+                              <option>AMERICA</option>
+                              <option>ENGLAND</option>
+                              <option>GERMANY</option>
+                              <option>Student of RGUKT</option>
+                              <option>Faculty of RGUKT</option>
+                          </select></td>
+                      </tr>
+                      <tr style="display: none;" id="beer">
+                          <td>Beer Reqiures</td><td>&nbsp;</td><td><input type="checkbox"><label>Yes</label><input type="checkbox"><label>No</label></td>
+                      </tr>
+                      <tr>
+                          <td>Payment Type:</td><td>
+                              <input type="text" placeholder="Enter DD Number or Account Number" id="pymt">
+                          </td>
+                      </tr>
+                    <tr>
+                        <td>Accomodation:</td><td><input type="radio" name="one" id="n"><label>Nuzvid</label><input type="radio" name="one" id="s"><label>SKLM</label><input type="radio" name="one" id="k"><label>Kadapa</label><input type="radio" name="one" id="o"><label>Ongole</label></td>
+                    </tr>
+                    <tr>
+                        <td>Services:</td><td><input type="checkbox"><label>Breakfast</label><input type="checkbox"><label>Lunch</label><input type="checkbox"><label>Snacks</label><input type="checkbox"><label>Tea</label><input type="checkbox"><label>Coffee</label></td>
+                    </tr>
+                    <tr>
+                        <td>Staying:</td><td><input type="number" placeholder="Enter the Number Of days Staying" id="days"></td>
+                    </tr>
+                    <tr>
+                        <td>Cost For Staying:</td><td><label id="cost"></label></td>
+                    </tr>
+                      <tr>
+                          <td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" style="cursor: pointer;"><input type="submit" value="Submit" style="cursor: pointer;"></td>
+                      </tr>
+                  </table>
+              </form>
+           </div>
+       </div>
+       <script src="Assign.js"></script>
+    </body>
+</html>
